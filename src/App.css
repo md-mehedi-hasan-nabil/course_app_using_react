@@ -1,0 +1,51 @@
+body {
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  scroll-behavior: smooth;
+}
+
+nav {
+  background-color: rgba(173, 216, 230, 0.85);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+}
+
+nav,
+footer,
+.card {
+  border-radius: 15px;
+}
+
+.card {
+  overflow: hidden;
+}
+
+/* #toggleNav {
+  background-color: rgba(173, 216, 230, 0.6);
+  transition: all 0.8s;
+} */
+
+.btn {
+  border-radius: 10px;
+}
+
+.row {
+  position: relative;
+}
+
+.fixed-enroll {
+  position: fixed;
+  top: auto;
+  left: 0;
+  width: 25%;
+  height: 80vh;
+  overflow-y: auto;
+}
+
+@media only screen and (max-width: 992px){
+  .fixed-enroll {
+    position: static;
+    width: 100%;
+    height: auto;
+  }
+}
