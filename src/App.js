@@ -8,10 +8,10 @@ import NoMatch from "./components/NoMatch/NoMatch";
 export const UserContext = createContext();
 
 function App() {
-  const [auth, setAuth] = useState();
-  
+  const [authUser, setAuthUser] = useState({});
+  // console.log(authUser)
   return (
-    <UserContext.Provider value={auth}>
+    <UserContext.Provider value={[authUser, setAuthUser]}>
       <Router>
         <Switch>
           <Route exact path="/">

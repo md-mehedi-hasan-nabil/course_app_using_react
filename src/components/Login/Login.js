@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import {
   getAuth,
   signInWithPopup,
@@ -9,18 +9,19 @@ import {
 import { initializeApp } from "firebase/app";
 import { firebaseConfig } from "../../firebaseConfig";
 import swal from "sweetalert";
+import { UserContext } from "../../App";
 
 initializeApp(firebaseConfig);
 
 const Login = () => {
-  const [authUser, setAuthUser] = useState({});
+  const [authUser, setAuthUser] = useContext(UserContext);
   const auth = getAuth();
 
   useEffect(() => {
     loggedInUser();
   }, []);
 
-  const loggedInUser = async() => {
+  const loggedInUser = () => {
     onAuthStateChanged(auth, (user) => {
       if (user) {
         const { accessToken, displayName, email, photoURL } = user;
@@ -29,7 +30,7 @@ const Login = () => {
         setAuthUser({});
       }
     });
-  };
+  }
 
   const userSignOut = () => {
     signOut(auth)
@@ -60,9 +61,14 @@ const Login = () => {
   return (
     <div>
       {authUser.displayName ? (
-        <button className="btn btn-danger" onClick={userSignOut}>
+        <>
+        <button className="btn btn-primary">
+          {authUser.displayName}
+        </button>
+        <button className="btn btn-danger mx-1" onClick={userSignOut}>
           SignOut
         </button>
+        </>
       ) : (
         <button onClick={googleSignIn} className="btn btn-primary px-3 me-4">
           <svg

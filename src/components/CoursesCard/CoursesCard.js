@@ -7,10 +7,12 @@ const CoursesCard = ({ course, addCourses }) => {
   return (
     <article className="col-lg-4">
       <Card className="my-3 mx-auto">
+        <div className="image-size">
         <Card.Img variant="top" src={background} />
+        </div>
         <Card.Body>
           <small>{_id}</small>
-          <Card.Title>{name}</Card.Title>
+          <Card.Title className="text-ellipsis">{name}</Card.Title>
           <Card.Title>Price: ${price}</Card.Title>
           <small>Time: {registered}</small> <br />
           <small>Company: {company}</small>

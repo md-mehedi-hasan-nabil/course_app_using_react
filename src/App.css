@@ -4,8 +4,22 @@ body {
   scroll-behavior: smooth;
 }
 
+.fixed-enroll::-webkit-scrollbar {
+  width: 8px;
+}
+
+.fixed-enroll::-webkit-scrollbar-track {
+  background-color: rgb(241, 241, 241);
+}
+
+.fixed-enroll::-webkit-scrollbar-thumb {
+  background-color: rgb(193, 193, 193);
+  border-radius: 30px;
+}
+
 nav {
-  background-color: rgba(173, 216, 230, 0.85);
+  /* background-color: rgba(173, 216, 230, 0.85); */
+  background-color: rgb(255, 255, 255, 0.8);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
 }
@@ -42,7 +56,21 @@ footer,
   overflow-y: auto;
 }
 
-@media only screen and (max-width: 992px){
+.image-size {
+  width: 406px;
+  height: 240px;
+  overflow: hidden;
+}
+
+.text-ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+}
+
+@media only screen and (max-width: 992px) {
   .fixed-enroll {
     position: static;
     width: 100%;

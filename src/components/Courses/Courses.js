@@ -2,23 +2,33 @@ import React, { Component } from "react";
 import { Container, Row, Spinner, Navbar, Nav } from "react-bootstrap";
 import { NavLink } from "react-router-dom";
 import swal from "sweetalert";
+import { UserContext } from "../../App";
 import CoursesCard from "../CoursesCard/CoursesCard";
 import EnrollCourse from "../EnrollCourse/EnrollCourse";
+import Footer from "../Footer/Footer";
 import Login from "../Login/Login";
 
-export default class Courses extends Component {
+class Courses extends Component {
   state = {
-    course: [],
+    courses: [],
     subject: [],
     loading: true,
     totalPrice: 0,
   };
 
   componentDidMount() {
-    // fetch("http://localhost:4000/")
+    // fetch("http://localhost:4000/", {
+    //   method: "GET",
+    //   headers: {
+    //     "Content-Type": "application/json",
+    //     auth: "",
+    //   },
+    // })
     fetch("courses.json")
       .then((res) => res.json())
-      .then((data) => this.setState({ course: data, loading: false }))
+      .then((data) =>
+        this.setState({ courses: this.shuffleArray(data), loading: false })
+      )
       .catch((error) => {
         swal("Error", "Backend Problem", "error");
         console.error(error);
@@ -40,7 +50,7 @@ export default class Courses extends Component {
         subject: total,
         totalPrice: subjectPrice,
       });
-      // swal("Thanks! for enroll course", "Course add successful", "success");
+      swal("Thanks! for enroll course", "Course add successful", "success");
     } else {
       swal("Error", "Can't take a course twice !", "error");
     }
@@ -68,9 +78,22 @@ export default class Courses extends Component {
     });
   };
 
+  shuffleArray = (arr) => {
+    const n = arr.length;
+    let myArray = [...arr];
+    for (let i = n - 1; i > 0; i--) {
+      let j = Math.floor(Math.random() * (i + 1));
+      let temp = myArray[j];
+      myArray[j] = myArray[i];
+      myArray[i] = temp;
+    }
+    return myArray;
+  };
+
   render() {
-    const { subject, totalPrice, loading, course } = this.state;
-    
+    const { subject, totalPrice, loading, courses } = this.state;
+    // console.log(this.UserContext)
+    console.log(this.shuffleArray(courses));
     return (
       <>
         <section className="container-fluid">
@@ -125,45 +148,6 @@ export default class Courses extends Component {
                 </Nav>
               </Navbar.Collapse>
             </Container>
-            {/* <div>
-              <button
-                type="button"
-                id="toggleBtn"
-                onClick={this.toggleSidenav}
-                className="btn btn-primary ms-4"
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="16"
-                  height="16"
-                  fill="currentColor"
-                  className="bi bi-list"
-                  viewBox="0 0 16 16"
-                >
-                  <path
-                    fillRule="evenodd"
-                    d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"
-                  />
-                </svg>
-              </button>
-            </div>
-            <div className="d-flex text-center">
-              <NavLink className="btn btn-primary mx-1 text-light" to="/">
-                Home
-              </NavLink>
-              <NavLink className="btn btn-primary mx-1 text-light" to="/about">
-                About
-              </NavLink>
-              <button className="btn btn-warning mx-1">
-                Total courses: {subject.length}
-              </button>
-              <button className="btn btn-success mx-1">
-                Total Price: ${totalPrice.toFixed(2)}
-              </button>
-            </div>
-            <div>
-              <Login />
-            </div> */}
           </nav>
           <section className="row">
             <aside className="col-lg-3 d-none" id="toggleNav">
@@ -172,9 +156,13 @@ export default class Courses extends Component {
                   <Row>
                     <div className="fixed-enroll bg-light">
                       {subject.length ? (
-                        <h2 className="mb-3">See your courses</h2>
+                        <h2 className="badge bg-primary my-2 fs-2 w-100">
+                          See your courses
+                        </h2>
                       ) : (
-                        <h2>no content here</h2>
+                        <h2 className="badge bg-danger my-2 fs-2 w-100">
+                          No content here
+                        </h2>
                       )}
                       <EnrollCourse
                         deleteCourse={this.deleteCourse}
@@ -192,7 +180,7 @@ export default class Courses extends Component {
                     {loading ? (
                       <Spinner className="mx-auto my-5" animation="border" />
                     ) : (
-                      course.map((item) => (
+                      courses.map((item) => (
                         <CoursesCard
                           key={item._id}
                           course={item}
@@ -206,14 +194,13 @@ export default class Courses extends Component {
               </Container>
             </aside>
           </section>
-          <footer className="text-center bg-light">
-            <div className="text-center p-4">
-              &copy; {new Date().getFullYear()} Copyright:{" "}
-              <span className="text-dark">Md. Mehedi Hasan Nabil</span>
-            </div>
-          </footer>
         </section>
+        <Footer />
       </>
     );
   }
 }
+
+// Courses.contextType = UserContext;
+
+export default Courses;
