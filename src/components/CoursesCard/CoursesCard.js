@@ -1,15 +1,18 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { Card, OverlayTrigger, Tooltip } from "react-bootstrap";
+import { Link } from "react-router-dom";
 
 const CoursesCard = ({ course, addCourses }) => {
   const { name, background, price, registered, company, _id } = course;
   return (
-    <article className="col-lg-4">
+    <article className="col-lg-4" data-aos="zoom-out-up">
       <Card className="my-3 mx-auto">
-        <div className="image-size">
-        <Card.Img variant="top" src={background} />
-        </div>
+        <Link to={`/course-details/${_id}`}>
+          <div className="image-size">
+            <Card.Img variant="top" src={background} />
+          </div>
+        </Link>
         <Card.Body>
           <small>{_id}</small>
           <Card.Title className="text-ellipsis">{name}</Card.Title>

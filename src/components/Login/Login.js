@@ -1,4 +1,4 @@
-import React, { useContext, useEffect, useState } from "react";
+import React, { useContext, useEffect } from "react";
 import {
   getAuth,
   signInWithPopup,
@@ -14,7 +14,7 @@ import { UserContext } from "../../App";
 initializeApp(firebaseConfig);
 
 const Login = () => {
-  const [authUser, setAuthUser] = useContext(UserContext);
+  const [contextData, setContextData] = useContext(UserContext);
   const auth = getAuth();
 
   useEffect(() => {
@@ -25,9 +25,9 @@ const Login = () => {
     onAuthStateChanged(auth, (user) => {
       if (user) {
         const { accessToken, displayName, email, photoURL } = user;
-        setAuthUser({ accessToken, displayName, email, photoURL });
+        setContextData( [{ accessToken, displayName, email, photoURL }]);
       } else {
-        setAuthUser({});
+        setContextData([]);
       }
     });
   }
@@ -48,7 +48,7 @@ const Login = () => {
     signInWithPopup(auth, provider)
       .then((result) => {
         const user = result.user;
-        setAuthUser(user.providerData[0]);
+        setContextData(user.providerData[0]);
         swal("SignIn successful", "Account Sign In successful", "success");
       })
       .catch((error) => {
@@ -60,12 +60,12 @@ const Login = () => {
   };
   return (
     <div>
-      {authUser.displayName ? (
+      {contextData.displayName ? (
         <>
         <button className="btn btn-primary">
-          {authUser.displayName}
+          {contextData.displayName}
         </button>
-        <button className="btn btn-danger mx-1" onClick={userSignOut}>
+        <button className="btn btn-outline-danger mx-1" onClick={userSignOut}>
           SignOut
         </button>
         </>

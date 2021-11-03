@@ -1,5 +1,4 @@
 import React from "react";
-import PropTypes from "prop-types";
 import { Card, Button } from "react-bootstrap";
 
 const EnrollCourse = ({ enrollSubject, deleteCourse }) => {
@@ -25,11 +24,6 @@ const EnrollCourse = ({ enrollSubject, deleteCourse }) => {
       ))}
     </>
   );
-};
-
-EnrollCourse.propTypes = {
-  enrollSubject: PropTypes.array.isRequired,
-  deleteCourse: PropTypes.func.isRequired,
 };
 
 export default EnrollCourse;

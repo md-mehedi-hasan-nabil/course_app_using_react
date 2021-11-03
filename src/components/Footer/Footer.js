@@ -4,7 +4,7 @@ const Footer = () => {
   return (
     <footer className="text-center bg-light">
       <div className="fw-bold">
-        <h3 className="my-3">Subscribe More Info</h3>
+        <h3 className="py-4">Subscribe More Info</h3>
         <form>
           <input
             className="form-control w-25 mx-auto my-2"
