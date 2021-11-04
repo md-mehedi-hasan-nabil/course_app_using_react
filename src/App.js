@@ -8,26 +8,29 @@ import Courses from "./components/Courses/Courses";
 import NoMatch from "./components/NoMatch/NoMatch";
 import CourseDetails from "./components/CourseDetails/CourseDetails";
 import Home from "./components/Home/Home";
-import Navigation from "./components/Navigation/Navigation";
+import PrivateRoute from "./components/PrivateRoute/PrivateRoute";
+import Login from "./components/Login/Login";
 
 export const UserContext = createContext(null);
 
 function App() {
-  const [contextData, setContextData] = useState([]);
+  const [contextData, setContextData] = useState({});
   useEffect(() => {
     AOS.init();
   }, []);
-  // console.log(authUser)
+
   return (
     <UserContext.Provider value={[contextData, setContextData]}>
       <Router>
-        {/* <Navigation /> */}
         <Switch>
-          <Route path="/course/:id">
+          <PrivateRoute path="/course/:id">
             <Courses />
-          </Route>
-          <Route path="/course-details/:id">
+          </PrivateRoute>
+          {/* <Route path="/course-details/:id">
             <CourseDetails />
+          </Route> */}
+          <Route path="/login">
+            <Login />
           </Route>
           <Route exact path="/">
             <Home />
