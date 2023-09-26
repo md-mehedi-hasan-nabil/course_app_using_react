@@ -15,25 +15,20 @@ export default function Home() {
     const [loading, setLoading] = useState(true);
     const [totalPrice, setTotalPrice] = useState(0);
 
-    const courseType = useParams().id;
-
     useEffect(() => {
         setLoading(true)
         fetch("courses.json")
             .then((res) => res.json())
             .then((data) => {
-                const filterArray = data.filter((el) => el.course_type === courseType)
-                setCourses(
-                    shuffleArray(filterArray)
-                );
-                setCoursesData(filterArray)
+                setCourses(shuffleArray(data));
+                setCoursesData(data)
                 setLoading(false);
             })
             .catch((error) => {
                 swal("Error", "Data fetch Problem", "error");
                 console.error(error);
             });
-    }, [courseType]);
+    }, []);
 
     const addCourses = (courseItem) => {
         let sameSubject = subject.some((item) => item._id === courseItem._id);
@@ -102,7 +97,7 @@ export default function Home() {
                             <Container fluid>
                                 <Row>
                                     <div className="fixed-enroll bg-light">
-                                        {subject.length ? (
+                                        {subject?.length ? (
                                             <h2 className="badge bg-primary my-2 fs-2 w-100">
                                                 See your courses
                                             </h2>
