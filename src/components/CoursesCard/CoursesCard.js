@@ -15,7 +15,9 @@ const CoursesCard = ({ course, addCourses }) => {
         </Link>
         <Card.Body>
           <small>{_id}</small>
-          <Card.Title className="text-ellipsis">{name}</Card.Title>
+          <Card.Title className="text-ellipsis">
+            <Link to={`/course-details/${_id}`} style={{textDecoration: "none"}}>{name}</Link>
+          </Card.Title>
           <Card.Title>Price: ${price}</Card.Title>
           <small>Time: {registered}</small> <br />
           <small>Company: {company}</small>

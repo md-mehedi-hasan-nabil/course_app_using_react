@@ -11,14 +11,14 @@
     "email": "vancemercado@supremia.com",
     "phone": "+880 (898) 487-2268",
     "address": "792 Stockton Street, Gibsonia, New Hampshire, 4217",
-    "descriptopn": "Sint et elit officia sunt laboris cillum pariatur. Voluptate duis quis officia sint veniam. Dolor laborum excepteur Lorem fugiat enim non culpa voluptate sunt. Nulla exercitation reprehenderit ex tempor velit consectetur cillum commodo sit. Tempor sunt fugiat est adipisicing mollit eu ex laborum nisi do sit.\r\n",
+    "description": "Sint et elit officia sunt laboris cillum pariatur. Voluptate duis quis officia sint veniam. Dolor laborum excepteur Lorem fugiat enim non culpa voluptate sunt. Nulla exercitation reprehenderit ex tempor velit consectetur cillum commodo sit. Tempor sunt fugiat est adipisicing mollit eu ex laborum nisi do sit.\r\n",
     "registered": "2014-04-13T03:08:10 -06:00"
   },
   {
     "_id": "6151c8cccef6054d881cdad2",
     "index": 1,
     "isActive": true,
-    "price": 652.00,
+    "price": 652.0,
     "card_picture": "https://picsum.photos/200/300",
     "background": "https://images.unsplash.com/photo-1507721999472-8ed4421c4af2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60",
     "name": "Responsive Web Design",
@@ -26,7 +26,7 @@
     "email": "joycestark@exerta.com",
     "phone": "+880 (826) 496-3746",
     "address": "807 Dumont Avenue, Marne, Illinois, 7666",
-    "descriptopn": "Aliqua aliqua laborum aute minim adipisicing sit. Mollit laborum excepteur non dolore ipsum. Non sit ex pariatur officia quis exercitation nulla aliqua nulla.\r\n",
+    "description": "Aliqua aliqua laborum aute minim adipisicing sit. Mollit laborum excepteur non dolore ipsum. Non sit ex pariatur officia quis exercitation nulla aliqua nulla.\r\n",
     "registered": "2017-01-26T09:21:20 -06:00"
   },
   {
@@ -41,7 +41,7 @@
     "email": "webbmurphy@norsul.com",
     "phone": "+880 (917) 506-2100",
     "address": "182 Bijou Avenue, Sidman, Arkansas, 3756",
-    "descriptopn": "Aliquip occaecat ex nostrud veniam est anim irure id sint. Anim qui aliquip nisi do. Do aliqua veniam non aliquip aliquip. Duis cillum voluptate reprehenderit minim ullamco ea nostrud do id excepteur. Ipsum exercitation Lorem ullamco Lorem do esse incididunt anim nostrud pariatur ea.\r\n",
+    "description": "Aliquip occaecat ex nostrud veniam est anim irure id sint. Anim qui aliquip nisi do. Do aliqua veniam non aliquip aliquip. Duis cillum voluptate reprehenderit minim ullamco ea nostrud do id excepteur. Ipsum exercitation Lorem ullamco Lorem do esse incididunt anim nostrud pariatur ea.\r\n",
     "registered": "2017-12-24T04:59:47 -06:00"
   },
   {
@@ -56,7 +56,7 @@
     "email": "deidresharpe@artworlds.com",
     "phone": "+880 (840) 521-2799",
     "address": "559 Lott Place, Bradenville, Missouri, 5659",
-    "descriptopn": "Nulla consectetur mollit est aliqua nulla voluptate. In duis eu pariatur culpa sint sit sit eiusmod et incididunt laborum. Ullamco magna eu id nostrud eu dolore eu eu esse. Aliquip occaecat enim laboris non minim aliquip incididunt consequat aliquip dolor. Proident excepteur Lorem ipsum dolor proident ut aliquip ea proident ut cupidatat dolore. Sunt Lorem mollit ullamco fugiat officia ipsum deserunt esse nisi.\r\n",
+    "description": "Nulla consectetur mollit est aliqua nulla voluptate. In duis eu pariatur culpa sint sit sit eiusmod et incididunt laborum. Ullamco magna eu id nostrud eu dolore eu eu esse. Aliquip occaecat enim laboris non minim aliquip incididunt consequat aliquip dolor. Proident excepteur Lorem ipsum dolor proident ut aliquip ea proident ut cupidatat dolore. Sunt Lorem mollit ullamco fugiat officia ipsum deserunt esse nisi.\r\n",
     "registered": "2019-03-20T03:10:39 -06:00"
   },
   {
@@ -71,14 +71,14 @@
     "email": "whitneydejesus@apexia.com",
     "phone": "+880 (890) 585-2757",
     "address": "550 Rogers Avenue, Ventress, Nebraska, 1893",
-    "descriptopn": "Culpa amet id sit consectetur deserunt sunt enim. Ut laboris voluptate et aliqua ad dolor aute dolor labore minim occaecat. Anim ex reprehenderit nulla ea nulla excepteur laborum sunt incididunt nisi culpa magna. Ut dolore esse sint quis enim enim adipisicing labore laboris.\r\n",
+    "description": "Culpa amet id sit consectetur deserunt sunt enim. Ut laboris voluptate et aliqua ad dolor aute dolor labore minim occaecat. Anim ex reprehenderit nulla ea nulla excepteur laborum sunt incididunt nisi culpa magna. Ut dolore esse sint quis enim enim adipisicing labore laboris.\r\n",
     "registered": "2019-05-23T09:16:54 -06:00"
   },
   {
     "_id": "6151c8ccf239db8789ac0e8a",
     "index": 5,
     "isActive": true,
-    "price": 741.40,
+    "price": 741.4,
     "card_picture": "https://picsum.photos/200/300",
     "background": "https://images.unsplash.com/photo-1512820790803-83ca734da794?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTV8fGJvb2t8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60",
     "name": "HTML, CSS, and Javascript for Web Developers",
@@ -86,7 +86,7 @@
     "email": "kirbywatson@indexia.com",
     "phone": "+880 (860) 595-2979",
     "address": "389 Flatlands Avenue, Harold, Puerto Rico, 7399",
-    "descriptopn": "Voluptate reprehenderit dolore mollit reprehenderit consectetur fugiat veniam nulla esse. Duis amet quis cillum velit incididunt ex dolor commodo cillum. Laborum id dolor voluptate cupidatat.\r\n",
+    "description": "Voluptate reprehenderit dolore mollit reprehenderit consectetur fugiat veniam nulla esse. Duis amet quis cillum velit incididunt ex dolor commodo cillum. Laborum id dolor voluptate cupidatat.\r\n",
     "registered": "2014-05-16T02:11:04 -06:00"
   },
   {
@@ -101,7 +101,7 @@
     "email": "gonzalezadams@xth.com",
     "phone": "+880 (964) 528-3367",
     "address": "505 Varanda Place, Adamstown, Rhode Island, 7976",
-    "descriptopn": "Et ullamco et velit ipsum non cillum non magna reprehenderit mollit. Esse anim proident commodo voluptate cupidatat non proident. Magna sint duis tempor qui cupidatat occaecat aute dolore. Veniam occaecat occaecat eu sint ad sint tempor eiusmod laboris deserunt minim.\r\n",
+    "description": "Et ullamco et velit ipsum non cillum non magna reprehenderit mollit. Esse anim proident commodo voluptate cupidatat non proident. Magna sint duis tempor qui cupidatat occaecat aute dolore. Veniam occaecat occaecat eu sint ad sint tempor eiusmod laboris deserunt minim.\r\n",
     "registered": "2015-06-18T05:19:15 -06:00"
   },
   {
@@ -116,7 +116,7 @@
     "email": "cobboneill@kenegy.com",
     "phone": "+880 (891) 485-2082",
     "address": "543 Quentin Road, Vicksburg, District Of Columbia, 1547",
-    "descriptopn": "Elit labore ipsum aliquip mollit elit eiusmod irure do quis cillum pariatur quis est enim. Veniam ullamco et officia incididunt veniam tempor exercitation aliquip commodo consequat eiusmod est. Ullamco id ex do sit qui irure. Est nisi deserunt nisi eiusmod qui velit ad deserunt voluptate proident nulla cupidatat consequat. Labore est sint Lorem consectetur esse occaecat. Consectetur sunt ut magna nostrud Lorem aute duis est proident officia sunt irure. Labore cillum excepteur quis quis eu aute reprehenderit nostrud magna.\r\n",
+    "description": "Elit labore ipsum aliquip mollit elit eiusmod irure do quis cillum pariatur quis est enim. Veniam ullamco et officia incididunt veniam tempor exercitation aliquip commodo consequat eiusmod est. Ullamco id ex do sit qui irure. Est nisi deserunt nisi eiusmod qui velit ad deserunt voluptate proident nulla cupidatat consequat. Labore est sint Lorem consectetur esse occaecat. Consectetur sunt ut magna nostrud Lorem aute duis est proident officia sunt irure. Labore cillum excepteur quis quis eu aute reprehenderit nostrud magna.\r\n",
     "registered": "2015-03-18T04:50:16 -06:00"
   },
   {
@@ -131,7 +131,7 @@
     "email": "agnessantos@kongene.com",
     "phone": "+880 (816) 466-2335",
     "address": "606 Franklin Street, Mayfair, New Mexico, 7551",
-    "descriptopn": "Sit nisi et sit consequat laborum commodo mollit fugiat nulla mollit eiusmod. Nulla incididunt velit deserunt incididunt sit incididunt elit eu. Laborum et voluptate aliqua occaecat cupidatat voluptate non labore incididunt. Minim dolore ad id eiusmod proident. Voluptate veniam proident incididunt laboris id. Ex duis veniam ut cillum deserunt deserunt voluptate occaecat. Proident labore est do do sint aliquip ea incididunt cillum.\r\n",
+    "description": "Sit nisi et sit consequat laborum commodo mollit fugiat nulla mollit eiusmod. Nulla incididunt velit deserunt incididunt sit incididunt elit eu. Laborum et voluptate aliqua occaecat cupidatat voluptate non labore incididunt. Minim dolore ad id eiusmod proident. Voluptate veniam proident incididunt laboris id. Ex duis veniam ut cillum deserunt deserunt voluptate occaecat. Proident labore est do do sint aliquip ea incididunt cillum.\r\n",
     "registered": "2016-03-16T12:56:25 -06:00"
   },
   {
@@ -146,7 +146,7 @@
     "email": "rubywilliam@motovate.com",
     "phone": "+880 (978) 459-3415",
     "address": "733 Sunnyside Avenue, Mathews, New Jersey, 2788",
-    "descriptopn": "Magna sint aute tempor minim cupidatat. Id mollit eu id ea quis sint fugiat irure. Anim incididunt qui sint sunt qui duis sunt. Ad reprehenderit consectetur cillum sint. Ea incididunt eiusmod laborum minim in velit amet consectetur ipsum sint incididunt. Exercitation enim Lorem exercitation enim consectetur ex dolor id elit consequat excepteur.\r\n",
+    "description": "Magna sint aute tempor minim cupidatat. Id mollit eu id ea quis sint fugiat irure. Anim incididunt qui sint sunt qui duis sunt. Ad reprehenderit consectetur cillum sint. Ea incididunt eiusmod laborum minim in velit amet consectetur ipsum sint incididunt. Exercitation enim Lorem exercitation enim consectetur ex dolor id elit consequat excepteur.\r\n",
     "registered": "2018-04-15T10:31:25 -06:00"
   },
   {
@@ -161,7 +161,7 @@
     "email": "montgomeryterrell@zensor.com",
     "phone": "+880 (943) 533-3805",
     "address": "516 Friel Place, Watchtower, Palau, 8452",
-    "descriptopn": "Pariatur aliquip reprehenderit cupidatat magna tempor officia. Aliqua reprehenderit voluptate cillum ipsum. Mollit irure eiusmod reprehenderit consectetur labore quis aliquip. Consequat pariatur adipisicing eu ullamco consequat ea sunt in non tempor sunt occaecat.\r\n",
+    "description": "Pariatur aliquip reprehenderit cupidatat magna tempor officia. Aliqua reprehenderit voluptate cillum ipsum. Mollit irure eiusmod reprehenderit consectetur labore quis aliquip. Consequat pariatur adipisicing eu ullamco consequat ea sunt in non tempor sunt occaecat.\r\n",
     "registered": "2020-12-02T10:34:49 -06:00"
   },
   {
@@ -176,7 +176,7 @@
     "email": "marinastephenson@zillidium.com",
     "phone": "+880 (881) 470-2852",
     "address": "426 Franklin Avenue, Grahamtown, Maryland, 7811",
-    "descriptopn": "Nisi consectetur culpa cillum officia laborum laboris nostrud laboris. Nisi quis amet esse nulla cillum anim anim anim amet amet nostrud ex. Dolore consequat laboris amet ex exercitation velit elit proident commodo nostrud do aute ut.\r\n",
+    "description": "Nisi consectetur culpa cillum officia laborum laboris nostrud laboris. Nisi quis amet esse nulla cillum anim anim anim amet amet nostrud ex. Dolore consequat laboris amet ex exercitation velit elit proident commodo nostrud do aute ut.\r\n",
     "registered": "2019-11-11T12:49:34 -06:00"
   },
   {
@@ -191,7 +191,7 @@
     "email": "mercedesjacobson@nixelt.com",
     "phone": "+880 (886) 507-3805",
     "address": "823 Perry Place, Chloride, Michigan, 9781",
-    "descriptopn": "Voluptate eu anim anim eiusmod culpa. Enim ea cupidatat eu dolore. Labore labore amet esse consequat adipisicing nisi do in dolor aute. Irure minim laborum fugiat cupidatat reprehenderit ullamco. Excepteur elit sint exercitation ea sunt. Minim esse pariatur sint eu non mollit ex excepteur voluptate.\r\n",
+    "description": "Voluptate eu anim anim eiusmod culpa. Enim ea cupidatat eu dolore. Labore labore amet esse consequat adipisicing nisi do in dolor aute. Irure minim laborum fugiat cupidatat reprehenderit ullamco. Excepteur elit sint exercitation ea sunt. Minim esse pariatur sint eu non mollit ex excepteur voluptate.\r\n",
     "registered": "2015-01-20T04:54:32 -06:00"
   },
   {
@@ -206,7 +206,7 @@
     "email": "millicentvinson@exostream.com",
     "phone": "+880 (826) 406-3970",
     "address": "289 Stuart Street, Jennings, Texas, 8046",
-    "descriptopn": "Amet fugiat sint officia cillum cillum aute consequat consequat. Sunt velit in veniam do enim eiusmod deserunt Lorem aliquip proident. Nisi officia tempor cupidatat esse sint reprehenderit qui qui elit quis sunt.\r\n",
+    "description": "Amet fugiat sint officia cillum cillum aute consequat consequat. Sunt velit in veniam do enim eiusmod deserunt Lorem aliquip proident. Nisi officia tempor cupidatat esse sint reprehenderit qui qui elit quis sunt.\r\n",
     "registered": "2016-01-02T02:14:56 -06:00"
   },
   {
@@ -221,7 +221,7 @@
     "email": "deeevans@premiant.com",
     "phone": "+880 (847) 482-3257",
     "address": "247 Stryker Court, Westwood, Northern Mariana Islands, 9566",
-    "descriptopn": "Reprehenderit qui officia culpa aliquip. Duis consectetur nulla minim dolore ea adipisicing nulla ea aliqua. Irure voluptate id amet dolore sint adipisicing dolor dolore ea commodo nulla reprehenderit.\r\n",
+    "description": "Reprehenderit qui officia culpa aliquip. Duis consectetur nulla minim dolore ea adipisicing nulla ea aliqua. Irure voluptate id amet dolore sint adipisicing dolor dolore ea commodo nulla reprehenderit.\r\n",
     "registered": "2017-10-01T01:09:44 -06:00"
   }
 ]
