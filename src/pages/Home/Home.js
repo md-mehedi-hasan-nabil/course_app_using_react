@@ -10,6 +10,7 @@ import Header from "../../components/Header/Header";
 
 export default function Home() {
     const [courses, setCourses] = useState([]);
+    const [coursesData, setCoursesData] = useState([]);
     const [subject, setSubject] = useState([]);
     const [loading, setLoading] = useState(true);
     const [totalPrice, setTotalPrice] = useState(0);
@@ -21,9 +22,11 @@ export default function Home() {
         fetch("courses.json")
             .then((res) => res.json())
             .then((data) => {
+                const filterArray = data.filter((el) => el.course_type === courseType)
                 setCourses(
-                    shuffleArray(data.filter((el) => el.course_type === courseType))
+                    shuffleArray(filterArray)
                 );
+                setCoursesData(filterArray)
                 setLoading(false);
             })
             .catch((error) => {
@@ -67,6 +70,15 @@ export default function Home() {
         });
     };
 
+    const courseSearchHandler = (keyword) => {
+        const searchCourses = coursesData.filter(course => course.name.toLowerCase().includes(keyword.toLowerCase()))
+        if (searchCourses?.length > 0) {
+            setCourses(searchCourses)
+        } else {
+            setCourses([])
+        }
+    }
+
     const shuffleArray = (arr) => {
         const n = arr.length;
         let myArray = [...arr];
@@ -83,7 +95,7 @@ export default function Home() {
         <>
             <section className="container-fluid">
                 <Header />
-                <Navigation subject={subject} totalPrice={totalPrice} />
+                <Navigation subject={subject} totalPrice={totalPrice} courseSearchHandler={courseSearchHandler} />
                 <section className="row">
                     <aside className="col-lg-3 d-none" id="toggleNav">
                         <Container fluid>

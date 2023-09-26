@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import {Link} from "react-router-dom"
 import { Card, Col, Row, Spinner } from "react-bootstrap";
 import { useParams } from "react-router";
 import swal from "sweetalert";
@@ -26,14 +27,13 @@ const CourseDetails = () => {
       });
   }, [courseId]);
 
-  console.log(courseDetail)
-
   const { _id, name, price, company, address, background, description, registered } = courseDetail || {}
 
   return (
     <div>
       <Header />
       <section className="container my-5">
+        <Link to="/" className="btn btn-primary" >Go Home</Link>
         <div className="mt-3">
           {loading ? (
             <Spinner className="mx-auto my-5" animation="border" />

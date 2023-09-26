@@ -1,12 +1,17 @@
 import React from "react";
-import { Badge, Container, Nav, Navbar, Image } from "react-bootstrap";
-import { Link, NavLink } from "react-router-dom";
+import { Badge, Container, Nav, Navbar } from "react-bootstrap";
+import { NavLink } from "react-router-dom";
 
-const Navigation = ({ subject, totalPrice }) => {
-  
+const Navigation = ({ subject, totalPrice, courseSearchHandler }) => {
+
   const toggleSidenav = () => {
     document.getElementById("toggleNav").classList.toggle("d-none");
   };
+
+  const handleSearch = (e) => {
+    courseSearchHandler(e.target.value)
+  }
+
   return (
     <nav className="navbar navbar-expand-lg d-flex justify-content-between align-items-center text-center py-3 sticky-top shadow">
       <Container fluid>
@@ -52,6 +57,9 @@ const Navigation = ({ subject, totalPrice }) => {
                 Total Price: ${totalPrice.toFixed(2)}
               </button>
             )}
+            <div className="mx-2 d-flex">
+              <input onChange={e => handleSearch(e)} className="form-control me-2" type="search" placeholder="Search course..." aria-label="Search" style={{ borderRadius: '0.5rem' }} />
+            </div>
           </Nav>
         </Navbar.Collapse>
       </Container>
